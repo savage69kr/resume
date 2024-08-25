@@ -76,3 +76,6 @@ ul>li:before{position:absolute;left:0;display:inline-block;content:"•";color:#
 .project:first-child{padding-top:0}
 .time{display:block;margin-bottom:1.5rem}
 mark{padding:2px 4px;background-color:#eee;border-radius:3px}
+.thumb1{width:99%}
+.thumb2{width:49.3%}
+.thumb3{width:33%}
