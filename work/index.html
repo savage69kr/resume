@@ -109,6 +109,8 @@
 	</div>
 <script>
 function zoom(elm){
+	elm.blur();
+	
 	let margin = 40;
 	let ww = (window.innerWidth || document.documentElement.clientWidth) - margin, wh = (window.innerHeight || document.documentElement.clientHeight) - margin;
 	let iw = elm.naturalWidth, ih = elm.naturalHeight;
@@ -127,9 +129,6 @@ function zoom(elm){
 	zoom.style.setProperty('left', (margin / 2 - 10 + Math.round((ww - iw) / 2)) + 'px');
 	zoom.style.setProperty('top', (margin / 2 - 10 + Math.round((wh - ih) / 2) + document.body.parentElement.scrollTop) + 'px');
 	document.body.appendChild(zoom);
-	
-	console.log([document])
-	console.log([document.body])
 	
 	zoom.addEventListener('click', () => zoom.remove());
 }
