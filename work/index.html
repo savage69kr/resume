@@ -56,7 +56,7 @@
 						<li><a href="https://play.google.com/store/apps/dev?id=9077046431383856414&hl=en" target="_blank">구글플레이</a></li>
 						<!-- <li><a href="https://www.crazygames.com" target="_blank">CrazyGames</a></li> -->
 					</ul>
-					<img loading="lazy" class="thumb thumb3" src="unit5_00.png" />
+					<img loading="lazy" style="border:0" class="thumb thumb3" src="unit5_00.png" />
 					<img loading="lazy" class="thumb thumb3" src="unit5_01.png" />
 					<img loading="lazy" class="thumb thumb3" src="unit5_02.png" />
 					<img loading="lazy" class="thumb thumb3" src="unit5_03.png" />
@@ -100,13 +100,47 @@
 					<h5>다양한 분야의 개발 경험<span class="period-mark">.</span></h5>
 					<p>20년 동안 게임 클라이언트의 개발만이 아닌, 웹서버나 데이터 베이스의 설계, 최적화, 멀티플레이 게임의 서버, 기술 컨설팅, LMS 등의 관리 도구 등 다양한 분야의 개발을 진행했습니다.</p>
 					<p>교육용 컨텐츠의 저작도구, 병/의원의 상담 프로그램, 웹사이트 개발, 오프라인 TCG카드의 제작/관리와 이를 사용한 온라인대전, 커뮤니티사이트의 개발 등 100여 개가 넘는 프로젝트를 진행하거나 이끈 경험을 토대로 개발 전반에 높은 이해를 하고 있고, 전문성을 가지고 있습니다.</p>
-					<img loading="lazy" class="thumb thumb2" src="etc_00.png" />
-					<img loading="lazy" class="thumb thumb2" src="etc_01.png" />
+					<img loading="lazy" class="thumb thumb1" src="etc_00.png" />
+					<img loading="lazy" class="thumb thumb1" src="etc_01.png" />
 				</div>
 			</div>
 			
 		</section>
 	</div>
+<script>
+function zoom(elm){
+	let margin = 40;
+	let ww = (window.innerWidth || document.documentElement.clientWidth) - margin, wh = (window.innerHeight || document.documentElement.clientHeight) - margin;
+	let iw = elm.naturalWidth, ih = elm.naturalHeight;
+	let r = Math.min(ww / iw, wh / ih);
+	if(r < 1.0){
+		iw = Math.round(iw * r);
+		ih = Math.round(ih * r);
+	}
+	
+	let zoom = document.getElementById('zoom');
+	if(zoom)zoom.remove();
+	
+	zoom = document.createElement('div');
+	zoom.id = 'zoom';
+	zoom.innerHTML = `<div class="overlay"></div><img width="${iw}px" height="${ih}px" src="${elm.src}" />`;
+	zoom.style.setProperty('left', (margin / 2 - 10 + Math.round((ww - iw) / 2)) + 'px');
+	zoom.style.setProperty('top', (margin / 2 - 10 + Math.round((wh - ih) / 2) + document.body.parentElement.scrollTop) + 'px');
+	document.body.appendChild(zoom);
+	
+	console.log([document])
+	console.log([document.body])
+	
+	zoom.addEventListener('click', () => zoom.remove());
+}
+window.onload = function(){
+	console.log([document])
+	console.log([document.body])
+	document.querySelectorAll('img.thumb').forEach((img) => {
+		img.addEventListener('click', () => zoom(img));
+	});
+};
+</script>
 </body>
 
 </html>
