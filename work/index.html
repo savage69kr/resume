@@ -119,8 +119,6 @@ function zoom(elm){
 	zoom.addEventListener('click', () => zoom.remove());
 }
 window.onload = function(){
-	console.log([document])
-	console.log([document.body])
 	document.querySelectorAll('img.thumb').forEach((img) => {
 		img.addEventListener('click', () => zoom(img));
 	});
