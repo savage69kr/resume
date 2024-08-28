@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>포트폴리오 - 맹주헌</title>
+	
+	<meta name="theme-color" content="#3a7bd5" />
+	<meta name="description" content="풀스택 게임 개발자 맹주헌입니다" />
+	
+	<meta property="og:url" content="https://resume.born81.com/code" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="포트폴리오 - 맹주헌" />
+	<meta property="og:image" content="https://resume.born81.com/card.png" />
+	<meta property="og:description" content="풀스택 게임 개발자 맹주헌입니다" />
+	<meta property="og:locale" content="ko_KR" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="포트폴리오 - 맹주헌" />
+	<meta name="twitter:image" content="https://resume.born81.com/card.png" />
+	<meta name="twitter:description" content="풀스택 게임 개발자 맹주헌입니다" />
+	<meta name="twitter:url" content="https://resume.born81.com/code" />
+	
+	<link rel="stylesheet" href="https://unpkg.com/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/prismjs@1.29.0/plugins/line-highlight/prism-line-highlight.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/prismjs@1.29.0/plugins/treeview/prism-treeview.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/prismjs@1.29.0/themes/prism-okaidia.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+	<link rel="stylesheet" href="index.css" />
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0XFCNDTF9"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-L0XFCNDTF9');</script>
+</head>
+
+<body>
+	<div class="container">
+		<section>
+			<h1>반갑습니다<span class="period-mark">.</span> 맹주헌입니다<span class="period-mark">.</span></h1>
+			<p>
+				<ul>
+					<li><a href="mailto:jh.maeng@born81.com">jh.maeng@born81.com</a></li>
+					<li><a href="tel:+821045552544">010 - 4555 - 2544</a></li>
+					<li><a href="https://resume.born81.com">경력기술서</a></li>
+					<li><a href="https://resume.born81.com/work">포트폴리오</a></li>
+				</ul>
+			</p>
+		</section>
+		
+		<section>
+			<div class="row">
+				<h5>공통 라이브러리 코드는 7만 줄 이상의 700여 개의 소스가 60여 개 모듈로 분리되어 있습니다<span class="period-mark">.</span></h5>
+				
+				<p>광고 서비스 코드의 일부입니다. 프로젝트에 따라 달라지는 광고사 SDK와 상관없이 사용할 수 있게 만들어져있습니다.</p>
+				<div class="codeview">
+					<div class="codeview-tree">
+						<pre data-remove-initial-line-feed data-line="8"><code class="language-treeview">
+|       |-- ScreenShotOptionExtension.cs
+|       `-- Widgets/
+|           `-- WidgetScreenShot.cs
+|-- U5.Service.Ads/
+|   `-- Scripts/
+|       |-- AdBannerPositionType.cs
+|       |-- AdControl.cs
+|       |-- AdServiceImpl.cs
+|       `-- Impl/
+|           |-- AdServiceEditor.cs
+|           |-- Admob/
+|           |   |-- AdServiceAdmob.cs
+|           |   |-- AdServiceAdmob_Banner.cs
+|           |   |-- AdServiceAdmob_Interstitial.cs
+|           |   |-- AdServiceAdmob_RewardVideo.cs
+|           |   `-- FBAdSettings.cs
+|           |-- AppLovin/
+|           |   |-- AdServiceAppLovin.cs
+|           |   |-- AdServiceAppLovin_Banner.cs
+|           |   |-- AdServiceAppLovin_Interstitial.cs
+|           |   `-- AdServiceAppLovin_RewardVideo.cs
+|           |-- CrazyGames/
+|           |   |-- AdServiceCrazy.cs
+|           |   |-- AdServiceCrazy_Banner.cs
+|           |   |-- AdServiceCrazy_Interstitial.cs
+|           |   `-- AdServiceCrazy_RewardVideo.cs
+|           |-- GameDistribution/
+|           |   |-- AdServiceGameDistribution.cs
+|           |   |-- AdServiceGameDistribution_Banner.cs
+|           |   |-- AdServiceGameDistribution_Interstitial.cs
+|           |   `-- AdServiceGameDistribution_RewardVideo.cs
+|           |-- IronSource/
+|           |   |-- AdServiceIronSource.cs
+|           |   |-- AdServiceIronSource_Banner.cs
+|           |   |-- AdServiceIronSource_Interstitial.cs
+|           |   `-- AdServiceIronSource_RewardVideo.cs
+|           `-- Mintegral/
+|               |-- AdServiceMintegral.cs
+|               |-- AdServiceMintegral_Banner.cs
+|               |-- AdServiceMintegral_Interstitial.cs
+|               `-- AdServiceMintegral_RewardVideo.cs
+|-- U5.Service.Analytics/
+|   `-- Scripts/
+|       |-- AnalyticService.cs
+						</code></pre>
+					</div>
+					
+					<div class="codeview-code">
+						<pre class="line-numbers" data-src="https://resume.born81.com/code/AdService.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+using UnityEngine;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using D = Unit5.WebPlayerDebug;
+#else
+using D = Unit5.DebugTool;
+#endif
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Text;
+
+using Unit5.Relays;
+
+//----------
+namespace Unit5
+{
+
+//----------
+sealed public partial class AdControl : SingletonMB<AdControl>
+{
+	
+	//----------
+	public enum AdState
+	{
+		None,
+		
+		AdLoaded,
+		AdFailedToLoad,
+		AdOpening,
+		AdFailedToShow,
+		UserEarnedReward,
+		AdClosed,
+		
+		AdWaitReward,
+	}
+	
+	//----------
+	AdServiceImpl _impl = null;
+	
+	//----------
+	public AdServiceImpl impl => _impl;
+	
+	public bool available => (_impl != null && _impl.available);
+	public bool isInited => (_impl != null && _impl.isInited);
+	
+	//----------
+	public IRelayLink<bool> onInitialized => _impl?.onInitialized;
+	public IRelayLink<float> onOpenedAd => _impl?.onOpenedAd;
+	
+	public int reqCountBanner => (_impl != null ? _impl.reqCountBanner : 0);
+	public int reqCountInterstitial => (_impl != null ? _impl.reqCountInterstitial : 0);
+	public int reqCountRewardVideo => (_impl != null ? _impl.reqCountRewardVideo : 0);
+	
+	//----------
+	public bool GetGDPRConsent()
+	{
+		if(_impl == null)return false;
+		return _impl.GetGDPRConsent();
+	}
+	public void SetGDPRConsent(bool confirm)
+	{
+		if(_impl == null)return;
+		_impl.SetGDPRConsent(confirm);
+	}
+	
+	//----------
+	public void Init(AdServiceImpl impl, Dictionary<string, string> options=null, bool disabledDefaultAd=false, bool checkGDPRConsent=false, bool autoFetch=true, Action<bool> onInitialized=null)
+	{
+		_impl = impl;
+		_impl.Init(options, disabledDefaultAd, checkGDPRConsent, autoFetch, onInitialized);
+	}
+	public void Init(Dictionary<string, string> options=null, bool disabledDefaultAd=false, bool checkGDPRConsent=false, bool autoFetch=true, Action<bool> onInitialized=null)
+	{
+		if(_impl == null)
+		{
+#if ADS_NONE
+			_impl = new AdServiceImpl();
+#elif ADS_ADMOB
+			_impl = new AdServiceAdmob();
+#elif UNITY_EDITOR || ADS_FAKE
+			_impl = new AdServiceEditor();
+#elif ADS_APPLOVIN
+			_impl = new AdServiceAppLovin();
+#elif ADS_IRONSOURCE
+			_impl = new AdServiceIronSource();
+#elif ADS_MINTEGRAL
+			_impl = new AdServiceMintegral();
+#elif ADS_CRAZYGAMES
+			_impl = new AdServiceCrazyGames();
+#elif ADS_GAMEDISTRIBUTION
+			_impl = new AdServiceGameDistribution();
+#else
+			_impl = new AdServiceImpl();
+#endif
+		}
+		
+		_impl.Init(options, disabledDefaultAd, checkGDPRConsent, autoFetch, onInitialized);
+	}
+	
+	//----------
+	public bool showBanner => (_impl != null && _impl.showBanner);
+	public bool isVisibleBanner => (_impl != null && _impl.isVisibleBanner);
+	public int bannerHeight => (_impl != null ? _impl.bannerHeight : -1);
+	
+	public void SetFirstBannerDelay(int duration)
+	{
+		if(_impl == null)return;
+		_impl.SetFirstBannerDelay(duration);
+	}
+	public void SetBannerPosition(AdBannerPositionType position)
+	{
+		if(_impl == null)return;
+		_impl.SetBannerPosition(position);
+	}
+	
+	public void ShowBanner(bool forceReload=false)
+	{
+		if(_impl == null)return;
+		_impl.ShowBanner(forceReload);
+	}
+	public void HideBanner(bool forceDestroy=false)
+	{
+		if(_impl == null)return;
+		_impl.HideBanner(forceDestroy);
+	}
+	
+	//----------
+	public bool isInterstitialTimeout => (_impl != null ? _impl.isInterstitialTimeout : false);
+	
+	public bool CanShowInterstitial()
+	{
+		if(_impl == null)return false;
+		return _impl.CanShowInterstitial();
+	}
+	
+	public void ShowInterstitial(Action<bool> onComplete=null, int timeout=10)
+	{
+		if(_impl == null)
+		{
+			onComplete(false);
+			return;
+		}
+		
+		_impl.ShowInterstitial(onComplete, timeout);
+	}
+	public void CancelInterstitial()
+	{
+		if(_impl == null)return;
+		_impl.CancelInterstitial();
+	}
+	public void FetchInterstitial()
+	{
+		if(_impl == null)return;
+		_impl.FetchInterstitial();
+	}
+	
+	//----------
+	public bool isRewardVideoTimeout => (_impl != null ? _impl.isRewardVideoTimeout : false);
+	
+	public bool CanShowRewardVideo()
+	{
+		if(_impl == null)return false;
+		return _impl.CanShowRewardVideo();
+	}
+	
+	public void ShowRewardVideo(Action<bool> onComplete=null, int timeout=10)
+	{
+		if(_impl == null)
+		{
+			onComplete(false);
+			return;
+		}
+		
+		_impl.ShowRewardVideo(onComplete, timeout);
+	}
+	public void CancelRewardVideo()
+	{
+		if(_impl == null)return;
+		_impl.CancelRewardVideo();
+	}
+	public void FetchRewardVideo()
+	{
+		if(_impl == null)return;
+		_impl.FetchRewardVideo();
+	}
+	
+	//----------
+	public void FetchAll()
+	{
+		if(_impl == null)return;
+		_impl.FetchAll();
+	}
+	
+	//----------
+	public void SetNoAdsPurchased(bool purchased)
+	{
+		if(_impl == null)return;
+		_impl.SetNoAdsPurchased(purchased);
+	}
+	
+	//----------
+	public void OpenTestSuite()
+	{
+		if(_impl == null)return;
+		_impl.OpenTestSuite();
+	}
+}
+
+}
+						</code></pre>
+					</div>
+				</div>
+				
+				<p>크로스 프로모션 서비스 코드의 일부입니다. 배너/동영상 위젯 등의 컴포넌트와 유틸리티들과 서버 측 서비스 코드로 구성되어 있습니다.</p>
+				<div class="codeview">
+					<div class="codeview-tree">
+						<pre data-remove-initial-line-feed data-line="15"><code class="language-treeview">
+|       |   |-- GoogleImpl.cs
+|       |   `-- UnityImpl.cs
+|       `-- MultiAnalyticsImpl.cs
+|-- U5.Service.CrossPromotion/
+|   |-- Assets/
+|   |   |-- LAni_cp_LEFT.anim
+|   |   |-- LAni_cp_RIGHT.anim
+|   |   |-- Merriweather-Regular-UNIT5CP.ttf
+|   |   |-- RobotoCondensed-Regular-slim.ttf
+|   |   |-- UNIT5_CP_frame_512.png
+|   |   `-- UNIT5_CP_frame_512.psd
+|   `-- Scripts/
+|       |-- PromotionControl.cs
+|       |-- PromotionInfo.cs
+|       |-- PromotionReward.cs
+|       `-- Widgets/
+|           |-- WidgetCrossBanner.cs
+|           |-- WidgetCrossInterstitial.cs
+|           `-- WidgetCrossVideo.cs
+|-- U5.Service.IAP/
+|   |-- Editor/
+|   |   `-- StoreSettingsInspector.cs
+						</code></pre>
+					</div>
+					
+					<div class="codeview-code">
+						<pre class="line-numbers" data-src="https://resume.born81.com/code/PromotionControl.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+using UnityEngine;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using D = Unit5.WebPlayerDebug;
+#else
+using D = Unit5.DebugTool;
+#endif
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+
+using Unit5;
+using Unit5.MiniJSON;
+
+//----------
+namespace Unit5.Service
+{
+
+//----------
+sealed public class PromotionControl
+{
+	
+	//----------
+	const string PROMOTION_URL = "_PROMOTION_URL";
+	const string PROMOTION_CACHE = "_PROMOTION_CACHE";
+	
+	//----------
+	static public bool isReady{get; private set;}
+	static public bool hasData{get; private set;}
+	
+	//----------
+	static public List<PromotionInfo> infos{get; private set;}
+	
+	//----------
+	static public PromotionInfo Get(bool notInstalled=false)
+	{
+		if(!hasData)return null;
+		
+		//
+		List<PromotionInfo> samples = (notInstalled ? GetNotInstalled() : infos);
+		if(samples.IsNullOrEmpty())samples = infos;
+		if(samples.IsNullOrEmpty())return null;
+		
+		if(samples.Count == 1)return samples[0];
+		
+		//
+		if(notInstalled)return GetNotInstalled().Choice();
+		
+		int[] weights = samples.Select((d) => d.weight).ToArray();
+		int weightTotal = weights.Sum();
+		
+		int dataIndex = MathUtil.RandomChoice(weights, weightTotal);
+		dataIndex = Mathf.Max(0, Mathf.Min(infos.Count - 1, dataIndex));
+		return infos[dataIndex];
+	}
+	static public PromotionInfo Get(string appId)
+	{
+		if(!hasData)return null;
+		
+		return infos.Find(i => i.appId == appId);
+	}
+	
+	static public List<PromotionInfo> GetNotInstalled()
+	{
+		if(!hasData)return null;
+		
+		return infos.Where(i => !IsInstalled(i)).ToList();
+	}
+	
+	static public List<PromotionInfo> GetAll(PromotionReward type)
+	{
+		if(!hasData)return null;
+		
+		return infos.Where(i => i.reward == type).ToList();
+	}
+	static public List<PromotionInfo> GetAll(bool hasExtra)
+	{
+		if(!hasData)return null;
+		
+		return infos.Where(i => !string.IsNullOrEmpty(i.extra)).ToList();
+	}
+	static public List<PromotionInfo> GetAll(PromotionReward type, bool hasExtra)
+	{
+		if(!hasData)return null;
+		
+		return infos.Where(i => i.reward == type && !string.IsNullOrEmpty(i.extra)).ToList();
+	}
+	
+	//----------
+	static public void CheckData(string url, Action<bool> callback)
+	{
+		if(string.IsNullOrEmpty(url))
+		{
+			callback(false);
+			return;
+		}
+		
+		if(hasData)
+		{
+			callback(true);
+			return;
+		}
+		
+		//
+		string oldCacheFilepath = EncryptedPlayerPrefs.GetString(PROMOTION_CACHE, string.Empty);
+		string newCacheFilepath = RequestUtil.GetCacheFilepath(url);
+		
+		FetchData(url, newCacheFilepath, (bool success) => {
+			if(success)
+			{
+				if(!string.IsNullOrEmpty(oldCacheFilepath))
+				{
+					StreamingAssetUtil.RemoveFile(oldCacheFilepath);
+				}
+				
+				EncryptedPlayerPrefs.SetString(PROMOTION_URL, url);
+				EncryptedPlayerPrefs.SetString(PROMOTION_CACHE, newCacheFilepath);
+			}
+			
+			callback((success && hasData));
+		});
+	}
+	
+	//----------
+	static public void FetchData(string url, Action<bool> callback)
+	{
+		FetchData(url, null, callback);
+	}
+	static public void FetchData(string url, string cacheFilepath, Action<bool> callback)
+	{
+		RequestUtil.Text(url, cacheFilepath, (string data) => {
+#if !NO_DEBUG
+			D.Log($"[UNIT5::PromotionControl] FetchData:: url={url} / cache={cacheFilepath} / data={data}");
+#endif
+			
+#if UNITY_EDITOR
+			if(string.IsNullOrEmpty(data))
+			{
+				MakeTestData();
+				
+				callback(true);
+				return;
+			}
+#endif
+			
+			if(string.IsNullOrEmpty(data))
+			{
+				isReady = false;
+				hasData = false;
+				
+				callback(false);
+			}
+			else
+			{
+				isReady = true;
+				
+				try
+				{
+					Dictionary<string, object> json = Json.Deserialize(data) as Dictionary<string, object>;
+					
+					string appId = UnityUtil.GetApplicationID();
+					
+					infos = json.GetDictionaryList("p")
+						.Select((d) => new PromotionInfo(d))
+						.Where((i) => i.appBundleId != appId)
+						.ToList()
+					;
+					
+					hasData = (infos.Count > 0);
+				}
+				catch
+				{
+					hasData = false;
+				}
+				
+				callback(hasData);
+			}
+		});
+	}
+	
+#if UNITY_EDITOR
+	static void MakeTestData()
+	{
+		isReady = true;
+		hasData = true;
+		
+		infos = new List<PromotionInfo>(){
+			new PromotionInfo(){
+				appBundleId = "com.ftt.cubie.aos",
+				appId = "com.ftt.cubie.aos",
+				appScheme = "cubieadventure",
+				
+				weight = 1,
+				
+				appName = "Cubie Adventure",
+				appDesc = "Adventure with your Cubie and Cupet friends!\nFrom cute looks and immersive gameplay! Cubie Adventure welcomes you!",
+				appLink = "http://onelink.to/mjnhpp",
+				
+				imgThumb = "https://share.unit5soft.com/_crosspromotion/ca_thumb.png",
+				imgBanner = "https://share.unit5soft.com/_crosspromotion/ca_banner.jpg",
+				imgPopup = "https://share.unit5soft.com/_crosspromotion/ca_full.jpg",
+				
+				vidClip = "https://share.unit5soft.com/_crosspromotion/ca_clip.mp4",
+				
+				reward = PromotionReward.None,
+				
+				extra = "",
+			},
+		};
+	}
+#endif
+	
+	//----------
+	static public bool IsInstalled(PromotionInfo info)
+	{
+#if !UNITY_EDITOR && (UNITY_IOS || UNITY_TVOS || UNITY_IPHONE)
+		return UnityUtil.IsInstalled(info.appScheme);
+#else
+		return UnityUtil.IsInstalled(info.appId);
+#endif
+	}
+	
+	//----------
+	static public bool IsMarked(string appId)
+	{
+		return (EncryptedPlayerPrefs.GetInt("_XP_" + appId, 0) == 1);
+	}
+	static public void MarkApp(string appId)
+	{
+		EncryptedPlayerPrefs.SetInt("_XP_" + appId, 1);
+	}
+}
+
+}
+						</code></pre>
+					</div>
+				</div>
+				
+				<p>값이나 상태의 변경 시 발생하는 화면 처리를 단순히 하기 위한 모듈의 일부입니다. 구매버튼, 다국어 이미지 등 프로젝트와 관계없이 일반화가 가능한 많은 부분을 모듈화하여 사용했습니다.</p>
+				<div class="codeview">
+					<div class="codeview-tree">
+						<pre data-remove-initial-line-feed data-line="34"><code class="language-treeview">
+|       |-- BaseN.cs
+|       |-- StringGenerator.cs
+|       `-- ZBase32.cs
+|-- U5.Data.Binding/
+|   |-- Editor/
+|   |   |-- BindingInfoInspector.cs
+|   |   `-- Components/
+|   |       |-- BindActionInspector.cs
+|   |       |-- BindGameObjectToggleInspector.cs
+|   |       |-- BindSpriteInspector.cs
+|   |       |-- BindTextMeshInspector.cs
+|   |       |-- BindTextureInspector.cs
+|   |       |-- BindUIButtonInspector.cs
+|   |       |-- BindUILabelInspector.cs
+|   |       |-- BindUIProgressBarInspector.cs
+|   |       |-- BindUISpanInspector.cs
+|   |       |-- BindUISpriteInspector.cs
+|   |       |-- BindUITextureInspector.cs
+|   |       |-- BindUIToggleInspector.cs
+|   |       `-- DataSetterInspector.cs
+|   `-- Scripts/
+|       |-- BindingFieldType.cs
+|       |-- BindingInfo.cs
+|       |-- BindingInfos.cs
+|       |-- Components/
+|       |   |-- BindAction.cs
+|       |   |-- BindGameObjectToggle.cs
+|       |   |-- BindSprite.cs
+|       |   |-- BindTextMesh.cs
+|       |   |-- BindTexture.cs
+|       |   |-- BindUIButton.cs
+|       |   |-- BindUILabel.cs
+|       |   |-- BindUIProgressBar.cs
+|       |   |-- BindUISpan.cs
+|       |   |-- BindUISprite.cs
+|       |   |-- BindUITexture.cs
+|       |   `-- BindUIToggle.cs
+|       |-- DataContext.cs
+|       |-- DataSetter.cs
+|       |-- IDataContext.cs
+|       |-- IDataProvider.cs
+|       `-- PropertyData.cs
+|-- U5.Debug/
+|   `-- Scripts/
+|       |-- DebugTool.cs
+						</code></pre>
+					</div>
+					
+					<div class="codeview-code">
+						<pre class="line-numbers" data-src="https://resume.born81.com/code/BindTextMesh.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+using UnityEngine;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using D = Unit5.WebPlayerDebug;
+#else
+using D = Unit5.DebugTool;
+#endif
+using TMPro;
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+//----------
+namespace Unit5
+{
+
+//----------
+public class BindTextMesh : DataSetter<string>
+{
+	
+	//----------
+	[Space(10)]
+	[SerializeField] TextMeshPro lblText = null;
+	[SerializeField] UILocalizedLabel lblLocalize = null;
+	[SerializeField] TweenLabelCounter tweenLabel = null;
+	
+	[Space(10)]
+	[SerializeField] string format;
+	
+	[Space(10)]
+	[SerializeField] float duration = 1.0f;
+	[SerializeField] float amountPerDuration = 0.0f;
+	[SerializeField] float durationMin = 0.3f;
+	[SerializeField] float durationMax = 2.1f;
+	
+	//----------
+	string text;
+	
+	//----------
+	override protected void OnValueChanged(string newValue)
+	{
+		UpdateText(newValue);
+	}
+	
+	//----------
+	void OnLocalize()
+	{
+		UpdateText(text);
+	}
+	
+	//----------
+	void UpdateText(string text)
+	{
+		if(lblLocalize != null)
+		{
+			UpdateLocalize(text);
+		}
+		else if(tweenLabel == null)
+		{
+			UpdateDirect(text);
+		}
+		else
+		{
+			UpdateTween(text);
+		}
+		
+		this.text = text;
+	}
+	
+	//----------
+	void UpdateLocalize(string text)
+	{
+		lblLocalize.text = text;
+	}
+	void UpdateDirect(string text)
+	{
+		if(string.IsNullOrEmpty(format))
+		{
+			lblText.text = text;
+		}
+		else
+		{
+			if(format.StartsWith("@"))
+			{
+				lblText.text = Localization2.Get(format, text);
+			}
+			else
+			{
+				lblText.text = string.Format(format, text);
+			}
+		}
+	}
+	void UpdateTween(string text)
+	{
+		int v = (string.IsNullOrEmpty(text) ? 0 : int.Parse(text));
+		
+		if(isReady)
+		{
+			float d = (amountPerDuration > 0.0f ? Mathf.Abs(v - tweenLabel.currentCount) / amountPerDuration : 1.0f) * duration;
+			if(durationMin > 0.0f)d = Mathf.Max(durationMin, d);
+			if(durationMax > 0.0f)d = Mathf.Min(durationMax, d);
+			
+			tweenLabel.Play(d, tweenLabel.currentCount, v);
+		}
+		else
+		{
+			tweenLabel.from = tweenLabel.to = v;
+			tweenLabel.Sample(1.0f, true);
+			
+			isReady = true;
+		}
+	}
+}
+
+}
+						</code></pre>
+					</div>
+				</div>
+				
+				<p>화면의 전체나 일부를 캡하는 위젯입니다. 협업 개발의 편의성을 위해 많은 부분을 위젯 형태로 만들어 인스펙터에서 조작하는 것만으로 처리가 가능하게 했습니다.</p>
+				<div class="codeview">
+					<div class="codeview-tree">
+						<pre data-remove-initial-line-feed data-line="16"><code class="language-treeview">
+|       |   |-- QueryBuilder.cs
+|       |   `-- SQLiteORM.cs
+|       `-- SQLiteSimple.cs
+|-- U5.ScreenShot/
+|   |-- Editor/
+|   |   `-- WidgetScreenShotInspector.cs
+|   `-- Scripts/
+|       |-- AnchorHorizontal.cs
+|       |-- AnchorVertical.cs
+|       |-- ScreenShotControl.cs
+|       |-- ScreenShotOption.cs
+|       |-- ScreenShotOptionExtension.cs
+|       `-- Widgets/
+|           `-- WidgetScreenShot.cs
+|-- U5.Service.Ads/
+|   `-- Scripts/
+|       |-- AdBannerPositionType.cs
+						</code></pre>
+					</div>
+					
+					<div class="codeview-code">
+						<pre class="line-numbers" data-src="https://resume.born81.com/code/WidgetScreenShot.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+using UnityEngine;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using D = Unit5.WebPlayerDebug;
+#else
+using D = Unit5.DebugTool;
+#endif
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+//----------
+namespace Unit5
+{
+
+//----------
+sealed public class WidgetScreenShot : MonoBehaviour
+{
+	
+	//----------
+	public enum CropMode
+	{
+		Option = 0,
+		Area,
+	}
+	
+	//----------
+	[Space(10)]
+	[SerializeField] Camera[] cameras = null;
+	
+	[Space(10)]
+	[SerializeField] [DelayedAttribute] int size = 320;
+	
+	[Space(10)]
+	[SerializeField] CropMode cropMode = CropMode.Option;
+	[SerializeField] ScreenShotOption cropOption = null;
+	[SerializeField] SpriteRenderer cropArea = null;
+	
+	[Space(10)]
+	[SerializeField] Texture2D overlay = null;
+	[SerializeField] ScreenShotOption merge = null;
+	
+	//----------
+	[NonSerialized] [HideInInspector] public Texture2D lastScreenShot;
+	
+	//----------
+	public bool isEnabled => (!cameras.IsNullOrEmpty());
+	
+	public ScreenShotOption crop => (cropMode == CropMode.Option ? cropOption : CalcArea());
+	ScreenShotOption CalcArea()
+	{
+		ScreenShotOption option = (cropOption == null ? new ScreenShotOption() : cropOption.Clone());
+		if(cropArea == null)return option;
+		
+		float fh = Camera.main.orthographicSize * 2f;
+		float fw = fh / Camera.main.pixelHeight * Camera.main.pixelWidth;
+		float iw = cropArea.bounds.size.x;
+		float ih = cropArea.bounds.size.y;
+		
+		option.anchorX = AnchorHorizontal.Left;
+		option.anchorY = AnchorVertical.Top;
+		option.width = iw / fw;
+		option.height = ih / fh;
+		option.offsetX = ((fw - iw) * 0.5f - (Camera.main.transform.position.x - cropArea.bounds.center.x)) / fw;
+		option.offsetY = ((fh - ih) * 0.5f - (Camera.main.transform.position.y - cropArea.bounds.center.y)) / fh;
+		return option;
+	}
+	
+	//----------
+	void OnDestroy()
+	{
+		Clear();
+	}
+	
+	//----------
+	public void Clear()
+	{
+		if(lastScreenShot != null)GameObject.Destroy(lastScreenShot);
+		lastScreenShot = null;
+	}
+	
+	//----------
+	public Texture2D TakeScreenShot()
+	{
+		lastScreenShot = TakeCroppedScreenShot(Screen.width, Screen.height);
+		
+		return lastScreenShot;
+	}
+	
+	//----------
+	public Texture2D TakeCroppedScreenShot(int width, int height)
+	{
+		int w = size;
+		int h = Mathf.RoundToInt(size * (height / (float)width));
+		
+		return TakeCroppedScreenShot(w, h, crop);
+	}
+	public Texture2D TakeCroppedScreenShot(int width, int height, ScreenShotOption option)
+	{
+		Texture2D image = CaptureFrame(width, height);
+		if(option.width == 1.0f && option.height == 1.0f && option.offsetX == 0.0f && option.offsetY == 0.0f)
+		{
+			if(overlay != null)
+			{
+				MergeOverlay(ref image);
+			}
+			
+			return image;
+		}
+		
+		Texture2D result = CropImage(ref image, option);
+		
+#if UNITY_EDITOR
+		DestroyImmediate(image);
+#else
+		Destroy(image);
+#endif
+		
+		if(overlay != null)
+		{
+			MergeOverlay(ref result);
+		}
+		
+		return result;
+	}
+	
+	//----------
+	public Texture2D CaptureFrame(int width, int height)
+	{
+		RenderTexture rt = new RenderTexture(width, height, 16, RenderTextureFormat.ARGB32);
+		foreach(Camera cam in cameras)
+		{
+			RenderTexture tt = cam.targetTexture;
+			cam.targetTexture = rt;
+			cam.Render();
+			cam.targetTexture = tt;
+		}
+		RenderTexture.active = rt;
+		
+		Texture2D image = new Texture2D(width, height, TextureFormat.RGB24, false);
+		image.ReadPixels(new Rect(0, 0, width, height), 0, 0, false);
+		image.Apply();
+		
+		RenderTexture.active = null;
+#if UNITY_EDITOR
+		DestroyImmediate(rt);
+#else
+		Destroy(rt);
+#endif
+		
+		return image;
+	}
+	
+	public Texture2D CropImage(ref Texture2D source, ScreenShotOption option)
+	{
+		Rect rect = option.Crop(source.width, source.height);
+		
+		Texture2D result = new Texture2D((int)rect.width, (int)rect.height, TextureFormat.RGBA32, false);
+		result.SetPixels(source.GetPixels((int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height));
+		result.Apply();
+		
+		return result;
+	}
+	
+	public Texture2D ResizeImage(ref Texture2D source, int width, int height)
+	{
+		Texture2D result = new Texture2D(width, height, source.format, false);
+		
+		float w = (float)width;
+		float h = (float)height;
+		
+		for(int y = 0; y < result.height; y += 1)
+		{
+			for(int x = 0; x < result.width; x += 1)
+			{
+				result.SetPixel(x, y, source.GetPixelBilinear(x / w, y / h));
+			}
+		}
+		result.Apply();
+		return result;
+	}
+	
+	public void MergeOverlay(ref Texture2D source)
+	{
+		MergeOverlay(ref source, merge);
+	}
+	public void MergeOverlay(ref Texture2D source, ScreenShotOption option)
+	{
+		int ow = source.width;
+		int oh = Mathf.FloorToInt(source.width * (overlay.height / (float)overlay.width));
+		
+		Rect rect = option.Place(source.width, source.height, ow, oh);
+		ow = (int)rect.width;
+		oh = (int)rect.height;
+		
+		Texture2D resizedOverlay = ResizeImage(ref overlay, ow, oh);
+		
+		int sx = Mathf.Max(0, Mathf.Min(source.width - ow, (int)rect.x));
+		int sy = Mathf.Max(0, Mathf.Min(source.height - oh, (int)rect.y));
+		int sw = Mathf.Min(source.width, sx + ow);
+		int sh = Mathf.Min(source.height, sy + oh);
+		
+		int px;
+		int py;
+		Color sourceColor;
+		Color overlayColor;
+		Color finalColor;
+		for(int x = sx; x < sw; x += 1)
+		{
+			for(int y = sy; y < sh; y += 1)
+			{
+				px = x - sx;
+				py = y - sy;
+				
+				sourceColor = source.GetPixel(x, y);
+				overlayColor = resizedOverlay.GetPixel(px, py);
+				finalColor = Color.Lerp(sourceColor, overlayColor, overlayColor.a / 1.0f);
+				source.SetPixel(x, y, finalColor);
+			}
+		}
+		
+		source.Apply();
+		
+#if UNITY_EDITOR
+		DestroyImmediate(resizedOverlay);
+#else
+		Destroy(resizedOverlay);
+#endif
+	}
+}
+
+}
+						</code></pre>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section>
+			<div class="row">
+				<h5>각 게임의 장면이나 UI의 동작 등은 대부분 공통 모듈을 통해 구성할 수 있는 환경을 구축했기 때문에 순수한 게임의 로직과 비즈니스 로직에만 집중할 수 있었습니다. 게임에 따라 1~15만 줄 정도로 작성되었습니다<span class="period-mark">.</span></h5>
+				
+				<div class="codeview">
+					<pre class="line-numbers" data-src="https://resume.born81.com/code/_G_NS.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+//====================
+// 블럭 게임의 일부입니다
+//====================
+	void RestoreGameStatus(bool passAppResume=false)
+	{
+		string data = GameData.GetGameData();
+		GameData.ClearGameData();
+		
+		// NOTE: 튜토리얼 이후 보드상태, 가운데에 4놓여있고 다음유닛은 4
+		// data = "E?|1|6|0|1|1|0;2:2:0|0;2:2:6||0:2|13|0";
+		
+		// NOTE: 가운데 x인 환경
+		// data = "E?|1|8|17|3|6|0;6:0:0|0;7:2:6,0;6:2:5,0;4:2:4,0;5:2:3,0;2:2:2,0;6:2:1,0;5:0:6|||14|0";
+		
+		// D.Log(data);
+		// DebugTool.Report(data, false);
+		
+		if(!string.IsNullOrEmpty(data))
+		{
+			MakeSavedLevel(data, passAppResume);
+		}
+		else
+		{
+			if(Game.skipLevelId > 0)
+			{
+				int skippedGoal = Game.skipLevelId;
+				
+				int lastClearGoal = GameData.GetLastClearedGoal(GameSettings.initialGoalA);
+				if(lastClearGoal < skippedGoal)
+				{
+					GameData.SetLastPlayedGoal(skippedGoal);
+					GameData.SetLastClearedGoal(skippedGoal);
+				}
+				
+				int skippedLevel = 1;
+				for(int i = 0; i < skippedGoal + 10; i += 1)
+				{
+					if(skippedGoal != GetGoalLevel(i + 1))continue;
+					
+					skippedLevel = i + 1;
+					break;
+				}
+				
+				int nextLevel = skippedLevel + 1;
+				
+				OpenLevelStart(nextLevel, () => {
+					MakeLevel(nextLevel, null, skippedGoal);
+				});
+			}
+			else
+			{
+				OpenLevelStart(1);
+			}
+		}
+		
+		// D.Log(GameData.GetGameData());
+	}
+	void SaveGameStatus(bool isPlaying=true)
+	{
+		VUnit goalUnit = model.units.Find((u) => (u.type == UnitType.Block && u.level == goal));
+		List<VUnit> remainUnits = model.units.Where((u) => (u != goalUnit && u != model.currUnit)).ToList();
+		
+		string serializedNextUnit = (model.currUnit == null ? "" : model.currUnit.GetSerializedData());
+		if(model.isItemMode && model.keepedUnit != null)serializedNextUnit = model.keepedUnit.GetSerializedData();
+		string serializedRemainUnits = remainUnits.Select((u) => u.GetSerializedData()).Join(",");
+		string serializedGoalUnit = (goalUnit == null ? "" : goalUnit.GetSerializedData());
+		string serializedQueueUnits = unitQueue.Select((u) => $"{((int)u.type)}:{u.level}").Join(",");
+		
+		string serializedReviceCount = GameData.GetReviveCount().ToString();
+		
+		GameData.SetGameData($"E?|{stage}|{goal}|{GameData.GetMergeCount()}|{GameData.GetUserLevel()}|{GameData.GetScore()}|{serializedNextUnit}|{serializedRemainUnits}|{serializedGoalUnit}|{serializedQueueUnits}|{GameData.guestId}|{serializedReviceCount}");
+	}
+}
+
+//====================
+	void MergeCoins(List<VUnit> mergeFrom, VUnit mergeTo)
+	{
+		mergeTo.SetDirty();
+		
+		Vector3 targetPos = mergeTo.localPos;
+		
+		//
+		int mergeCount = mergeFrom.Count;
+		
+		int coinIncrAmount = 0;
+		for(int i = 0; i < mergeCount; i += 1)
+		{
+			coinIncrAmount += mergeFrom[i].level - 1 + 3;
+		}
+		
+		if(mergeFrom.Count == 0)
+		{
+			mergeTo.PlayAnim(VUnit.ANIM_STATE_MERGE_OUT, () => {
+				mergeTo.IncrLevel(coinIncrAmount);
+				
+				mergeTo.PlayAnim(VUnit.ANIM_STATE_MERGE_NEW);
+			});
+			mergeTo.SetDirty(false);
+		}
+		else
+		{
+			for(int i = 0; i < mergeCount; i += 1)
+			{
+				if(i < mergeCount - 1)
+				{
+					MergeTo(mergeFrom[i], targetPos);
+				}
+				else
+				{
+					MergeTo(mergeFrom[i], targetPos, () => {
+						mergeTo.PlayAnim(VUnit.ANIM_STATE_MERGE_OUT, () => {
+							mergeTo.IncrLevel(coinIncrAmount);
+							
+							mergeTo.PlayAnim(VUnit.ANIM_STATE_MERGE_NEW);
+						});
+						mergeTo.SetDirty(false);
+					});
+				}
+			}
+		}
+		
+		//
+		Effect.Spawn(VfxEffectType.Merge, targetPos);
+		Effect.Play(model.GetComboSFX());
+		Effect.Vibrate((model.GetCombo() > 2 ? VibrationStyle.HEAVY : VibrationStyle.MEDIUM));
+		
+		//
+		model.ReorderUnits(mergeTo);
+	}
+
+//====================
+	async UniTask WaitEndOfMovingAsync()
+	{
+		while(true)
+		{
+			await UniTask.Yield();
+			
+			int bCount = model.units.Count((u) => u.isMoving);
+			
+			int kCount = model.removedUnits.Count((u) => u.isMoving);
+			if(kCount == 0 && !model.removedUnits.IsNullOrEmpty())
+			{
+				model.removedUnits.ForEach((u) => u.Release());
+				model.removedUnits = new List<VUnit>();
+			}
+			
+			if(bCount + kCount == 0)break;
+		}
+		
+		model.ReorderUnits();
+		
+		CheckArrows();
+		
+		SaveGameStatus();
+	}
+	
+	async UniTaskVoid CheckMoveAsync(VUnit unit)
+	{
+		navigationController.ToggleBlockerPanel(true);
+		
+		//
+		int currentMergeCount = GameData.GetMergeCount();
+		
+		//
+		isWaitingDropAndHit = true;
+		currDroppedUnit = unit;
+		
+		//
+		if(model.units.Any((u) => u.isMoving))
+		{
+			await WaitEndOfMovingAsync();
+		}
+		
+		//
+		while(true)
+		{
+			int changed = 0;
+			
+			//
+			if(DropUnit())
+			{
+				changed += 1;
+				await WaitEndOfMovingAsync();
+			}
+			
+			//
+			if(CheckHit())
+			{
+				changed += 1;
+				await WaitEndOfMovingAsync();
+			}
+			
+			//
+			if(changed == 0)break;
+		}
+		
+		// NOTE: 딜레이 없고, 콤보는 한번 drop 에서만
+		model.UpdateCombo();
+		
+		await WaitEndOfMovingAsync();
+		
+		//
+		navigationController.ToggleBlockerPanel(false);
+		
+		//
+		isWaitingDropAndHit = false;
+		currDroppedUnit = null;
+		
+		//
+		model.CalcActionIds();
+		
+		//
+		CheckArrows();
+		
+		SaveGameStatus();
+		
+		//
+		if(model.CheckDead() || model.isTimeOver)
+		{
+			WillGameOver();
+			
+			if(model.isTimeOver)
+			{
+				OnTimeOver();
+			}
+			else
+			{
+				Effect.Spawn(VfxUIEffectType.BoardFull, () => {
+					OnGameOver();
+				});
+			}
+		}
+		else
+		{
+			// int x = (model.IsEmptyCol(model.centerCol, true) ? model.centerCol : -1);
+			// NOTE: 마지막 떨어진 곳 사용, 안되면 빈곳
+			int x = model.GetEmptyCol(model.lastCol);
+			
+			VUnit spawnedUnit = (x == -1 ? null : SpawnUnit(x));
+			GameData.AddEarnedUnit(spawnedUnit.level);
+			
+			model.currUnit = spawnedUnit;
+			
+			//
+			env.ShowNextUnit(GetNextUnit(true));
+			
+			FillNextUnits();
+			
+			model.ReorderUnits(model.currUnit, true);
+			
+			CheckArrows();
+			
+			SaveGameStatus();
+		}
+	}
+					</code></pre>
+				</div>
+				
+				<div class="codeview">
+					<pre class="line-numbers" data-src="https://resume.born81.com/code/_G_PS.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+//====================
+// 포커 게임의 일부입니다.
+//====================
+	void ReplaceCard(Card target)
+	{
+		DoReplaceCardAsync(target).Forget();
+	}
+	async UniTaskVoid DoReplaceCardAsync(Card target)
+	{
+		CancellationToken ct = gameObject.GetCancellationTokenOnDestroy();
+		
+		//
+		target.order = 301;
+		
+		int x = target.gx;
+		int y = target.gy;
+		
+		float delay = 0.0f;
+		
+		await MoveBoardCardToTrash.Create(target, Vector3.zero, ref delay).Play().AwaitForComplete(cancellationToken: ct);
+		
+		model.RemoveCard(target);
+		
+		//
+		Card card = null;
+		Sequence seq = DOTween.Sequence();
+		
+		bool hasNextCard = model.hasNextCard;
+		if(hasNextCard)
+		{
+			card = model.GetCardFromDeck(x, y);
+			
+			MoveDeckCardToBoard.Create(seq, card, new Vector3(env.GetRealX(x), env.GetRealY(y), 0), card.gy * env.cols + card.gx, ref delay);
+			
+			hasNextCard = model.hasNextCard;
+		}
+		if(hasNextCard)
+		{
+			card = model.GetCardFromDeck(-1, -1, true);
+			
+			if(!card.isFront)OpenDeckCard.Create(seq, card, ref delay);
+		}
+		if(seq.Duration() > 0.0f)
+		{
+			await seq.Play().AwaitForComplete(cancellationToken: ct);
+		}
+		
+		//
+		model.UpdateOrders();
+		
+		//
+		if(!hasNextCard)
+		{
+			WillGameOver();
+			
+			OnOutOfCards();
+		}
+	}
+
+//====================
+	async UniTaskVoid DoNextAsync(List<Card> hands)
+	{
+		IncrQuest(hands.Count);
+		
+		//
+		await DoMoveHandsToTrashAsync(hands);
+		
+		await DoDropBoardCardsAsync();
+		
+		await DoMoveDeckToBoardAsync();
+		
+		//
+		if(!model.hasNextCard)
+		{
+			WillGameOver();
+			OnOutOfCards();
+		}
+	}
+	async UniTask DoMoveHandsToTrashAsync(List<Card> hands)
+	{
+		List<CardData> cards;
+		HandType result = HandSolver.Solve(ref hands, out cards);
+		
+		if(hands[0].data.Equals(CardData.JOKER))hands[0].SetData(cards[0]);
+		hands.Sort();
+		
+		if(result != HandType.ROYAL_STRAIGHT_FLUSH_NO_WILD && result != HandType.ROYAL_STRAIGHT_FLUSH && result != HandType.STRAIGHT_FLUSH && result != HandType.STRAIGHT)hands.Reverse();
+		
+		for(int i = 0; i < hands.Count; i += 1)hands[i].order = Mathf.RoundToInt(301 + i);
+		
+		Dictionary<int, List<Card>> groups = new Dictionary<int, List<Card>>();
+		Dictionary<int, int> ranks;
+		int[] rks;
+		switch(result)
+		{
+			case HandType.ROYAL_STRAIGHT_FLUSH_NO_WILD:
+			case HandType.FIVE_OF_A_KIND:
+			case HandType.ROYAL_STRAIGHT_FLUSH:
+			case HandType.STRAIGHT_FLUSH:
+			case HandType.FLUSH:
+			case HandType.STRAIGHT:
+				groups[1] = hands;
+				break;
+				
+			case HandType.FOUR_OF_A_KIND:
+			case HandType.THREE_OF_A_KIND:
+			case HandType.ONE_PAIR:
+				ranks = new Dictionary<int, int>();
+				hands.ForEach((c) => {
+					if(!ranks.ContainsKey(c.data.rank))ranks[c.data.rank] = 0;
+					ranks[c.data.rank] += 1;
+				});
+				rks = ranks.Keys.OrderBy((r) => -ranks[r]).ToArray();
+				
+				groups[1] = hands.Where((c) => (c.data.rank == rks[0])).ToList();
+				break;
+				
+			case HandType.FULL_HOUSE:
+			case HandType.TWO_PAIR:
+				ranks = new Dictionary<int, int>();
+				hands.ForEach((c) => {
+					if(!ranks.ContainsKey(c.data.rank))ranks[c.data.rank] = 0;
+					ranks[c.data.rank] += 1;
+				});
+				rks = ranks.Keys.OrderBy((r) => -ranks[r]).ToArray();
+				
+				groups[1] = hands.Where((c) => (c.data.rank == rks[0])).ToList();
+				groups[2] = hands.Where((c) => (c.data.rank == rks[1])).ToList();
+				break;
+		}
+		
+		Sequence seq = DOTween.Sequence();
+		
+		float margin = -env.cardMargin;
+		float cardWidth = -env.cardWidth;
+		float groupScale = -env.groupScale;
+		float sx = ((hands.Count - 1) * margin) * 0.5f;
+		float delay = 0.0f;
+		
+		env.SetHandBackground(true);
+		env.SetHandGroup1(false);
+		env.SetHandGroup2(false);
+		if(groups.ContainsKey(1))
+		{
+			env.SetHandGroup1(
+				true,
+				groups[1].Select((c) => new Vector3(sx + hands.IndexOf(c) * cardWidth, 0.0f, 0.0f)).Avg(),
+				new Vector3(groups[1].Count * groupScale, groupScale, 0.0f)
+			);
+		}
+		if(groups.ContainsKey(2))
+		{
+			env.SetHandGroup2(
+				true,
+				groups[2].Select((c) => new Vector3(sx + hands.IndexOf(c) * cardWidth, 0.0f, 0.0f)).Avg(),
+				new Vector3(groups[2].Count * groupScale, groupScale, 0.0f)
+			);
+		}
+		ShowResult.Create(seq, env.handBackground);
+		
+		for(int i = 0; i < hands.Count; i += 1)
+		{
+			MoveBoardCardToResult.Create(seq, hands[i], new Vector3(sx + i * 6.0f, 0.0f, 0.0f), ref delay);
+		}
+		await seq.Play().AwaitForComplete(cancellationToken: ct);
+		
+		await UniTask.Delay(600, cancellationToken: ct);
+		
+		hands.ForEach((c) => c.Release());
+		
+		env.SetHandBackground(false);
+	}
+	async UniTask DoDropBoardCardsAsync()
+	{
+		Card card = null;
+		
+		//
+		float delay = 0.0f;
+		
+		Sequence seq = DOTween.Sequence();
+		
+		for(int y = env.rows - 1; y > -1; y -= 1)
+		{
+			for(int x = 0; x < env.cols; x += 1)
+			{
+				card = model.GetCard(x, y);
+				if(card == null)continue;
+				
+				int ny = -1;
+				for(int by = y + 1; by < env.rows; by += 1)
+				{
+					if(env.IsInside(x, by) && model.GetCard(x, by) != null)break;
+					
+					ny = by;
+				}
+				if(ny == -1)continue;
+				
+				if(card.gy == ny)continue;
+				
+				model.MoveCard(card, x, ny);
+				
+				DropBoardCard.Create(seq, card, env.GetRealY(card.gy), card.gy - y, ref delay);
+			}
+		}
+		await seq.Play().AwaitForComplete(cancellationToken: ct);
+		
+		//
+		model.UpdateOrders();
+	}
+	async UniTask DoMoveDeckToBoardAsync()
+	{
+		Card card = null;
+		
+		//
+		float delay = 0.0f;
+		
+		Sequence seq = DOTween.Sequence();
+		
+		bool hasNextCard = model.hasNextCard;
+		if(hasNextCard)
+		{
+			int loopLimit = model.gridPositions.Count;
+			int x, y;
+			for(int i = 0; i < loopLimit; i += 1)
+			{
+				x = model.gridPositions[i].x;
+				y = model.gridPositions[i].y;
+				
+				if(model.GetCard(x, y) != null)continue;
+				
+				//
+				card = model.GetCardFromDeck(x, y);
+				
+				if(card.isFront)
+				{
+					MoveDeckCardToBoard.Create(seq, card, new Vector3(env.GetRealX(x), env.GetRealY(y), 0), card.gy * env.cols + card.gx, delay);
+					delay += MoveDeckCardToBoard.NextDelay();
+				}
+				else
+				{
+					OpenDeckCard.Create(seq, card, delay);
+					MoveDeckCardToBoard.Create(seq, card, new Vector3(env.GetRealX(x), env.GetRealY(y), 0), card.gy * env.cols + card.gx, delay + OpenDeckCard.NextDelay());
+					delay += MoveDeckCardToBoard.NextDelay();
+				}
+				
+				hasNextCard = model.hasNextCard;
+				
+				//
+				if(!hasNextCard)break;
+			}
+		}
+		
+		if(hasNextCard)
+		{
+			card = model.GetCardFromDeck(-1, -1, true);
+			
+			if(!card.isFront)OpenDeckCard.Create(seq, card, ref delay);
+		}
+		
+		if(seq.Duration() > 0.0f)
+		{
+			await seq.Play().AwaitForComplete(cancellationToken: ct);
+		}
+		
+		//
+		model.UpdateOrders();
+	}
+	async UniTask _DoMoveTrashToDeck()
+	{
+		model.MovePoolToDeck();
+		
+		//
+		float delay = 0.0f;
+		
+		Sequence seq = DOTween.Sequence();
+		
+		for(int i = 0; i < model.decks.Count; i += 1)
+		{
+			MoveTrashCardToDeck.Create(model.decks[i], new Vector3(env.deckX + i * env.deckSpan, env.deckY, 0), ref delay);
+		}
+		await seq.Play().AwaitForComplete(cancellationToken: ct);
+		
+		//
+		await OpenDeckCard.Create(model.GetCardFromDeck(-1, -1, true)).Play().AwaitForComplete(cancellationToken: ct);
+	}
+					</code></pre>
+				</div>
+				
+				<div class="codeview">
+					<pre class="line-numbers" data-src="https://resume.born81.com/code/_G_RB.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+//====================
+// 퍼즐 게임의 일부입니다.
+//====================
+	HashSet<int> checkedPairs = new HashSet<int>();
+	HashSet<VUnit> cachedRemovableUnits = new HashSet<VUnit>();
+	
+	VUnit[] targetUnits;
+	
+	bool waitRemoveConnectUnits = false;
+	
+	void UpdateJoints()
+	{
+		bool hasRemovableUnits = (!removableUnits.IsNullOrEmpty());
+		if(hasRemovableUnits)removableUnitJoints = new List<UnitBallJoint>();
+		
+		cachedRemovableUnits.Clear();
+		for(int i = 0; i < removableUnits.Count; i += 1)cachedRemovableUnits.Add(removableUnits[i]);
+		
+		checkedPairs.Clear();
+		int pairId = 0;
+		
+		VUnit unit1 = null;
+		VUnit unit2 = null;
+		UnitBallJoint joint = null;
+		
+		Vector3 pos1 = Constants.V0;
+		Vector3 pos2 = Constants.V0;
+		
+		bool forceRemoveJoint = false;
+		float dist = 0.0f;
+		int distCache = 0;
+		float distPxl = 0.0f;
+		float distSpanPxl = 0.0f;
+		int jointType = 0;
+		
+		targetUnits = units.Where((u) => (u.type == UnitType.Ball)).ToArray();
+		
+		int total = targetUnits.Length;
+		int i, j;
+		for(i = 0; i < total; i += 1)
+		{
+			unit1 = targetUnits[i];
+			
+			for(j = total - 1; j > -1; j -= 1)
+			{
+				if(i == j)continue;
+				
+				//
+				unit2 = targetUnits[j];
+				
+				pairId = (1 + Mathf.Max(unit1.hash, unit2.hash)) * 1000 + (1 + Mathf.Min(unit1.hash, unit2.hash));
+				if(checkedPairs.Contains(pairId))continue;
+				checkedPairs.Add(pairId);
+				
+				if(!unit1.Equals(unit2))continue;
+				
+				if(!VUnit.CanConnect(unit1, unit2))
+				{
+					RemoveJoint(pairId);
+					continue;
+				}
+				
+				if(!unit1.isReady || !unit2.isReady)
+				{
+					RemoveJoint(pairId);
+					continue;
+				}
+				
+				if(unit1.willRemove || unit2.willRemove)
+				{
+					RemoveJoint(pairId);
+					continue;
+				}
+				
+				//
+				forceRemoveJoint = (hasRemovableUnits ? (cachedRemovableUnits.Contains(unit1) || cachedRemovableUnits.Contains(unit2)) : false);
+				
+				pos1 = unit1.pos;
+				pos2 = unit2.pos;
+				
+				dist = Vector3.Distance(pos1, pos2);
+				if(dist > env.unitDistanceMax || forceRemoveJoint)
+				{
+					RemoveJoint(pairId, forceRemoveJoint);
+					continue;
+				}
+				
+				distCache = Mathf.FloorToInt(dist * 10000);
+				if(cachedJointDistances.ContainsKey(pairId) && cachedJointDistances[pairId] == distCache)continue;
+				cachedJointDistances[pairId] = distCache;
+				
+				distPxl = dist * env.TO_PXL;
+				distSpanPxl = distPxl - env.unitPxlSize;
+				
+				//
+				if(!cachedJoints.ContainsKey(pairId))cachedJoints[pairId] = SpawnJoint(env.canvas, unit1.shape);
+				joint = cachedJoints[pairId];
+				
+				jointType = env.CalcJointType(distSpanPxl);
+				joint.UpdateLinks(unit1.shape, jointType, pos1, pos2, (distPxl - env.unitSpansEx[jointType]) * env.TO_UNT);
+			}
+		}
+		
+		if(hasRemovableUnits)
+		{
+			waitRemoveConnectUnits = true;
+			
+			units = units.Except(removableUnits).ToList();
+			
+			units.ForEach((u) => {
+				u.isEnabled = false;
+				u.ResetAllVelocity();
+			});
+			
+			//
+			removableUnits.ForEach((u) => u.isEnabled = false);
+			
+			RemoveConnected(
+				new List<VUnit>(removableUnits.ToArray()),
+				new List<UnitBallJoint>(removableUnitJoints.ToArray())
+			);
+			
+			removableUnits.Clear();
+			removableConnectedUnits.Clear();
+			removableUnitJoints.Clear();
+		}
+		else
+		{
+			if(waitRemoveConnectUnits)
+			{
+				units.ForEach((u) => u.isEnabled = true);
+				
+				waitRemoveConnectUnits = false;
+			}
+		}
+	}
+	void UpdateRemovableUnitJoints()
+	{
+		if(removableConnectedUnits.IsNullOrEmpty())return;
+		
+		//
+		checkedPairs.Clear();
+		int pairId = 0;
+		
+		VUnit unit1 = null;
+		VUnit unit2 = null;
+		UnitBallJoint joint = null;
+		
+		Vector3 pos1 = Constants.V0;
+		Vector3 pos2 = Constants.V0;
+		
+		float dist = 0.0f;
+		int distCache = 0;
+		float distPxl = 0.0f;
+		float distSpanPxl = 0.0f;
+		int jointType = 0;
+		
+		int total = removableConnectedUnits.Count;
+		int i, j;
+		for(i = 0; i < total; i += 1)
+		{
+			unit1 = removableConnectedUnits[i];
+			
+			for(j = total - 1; j > -1; j -= 1)
+			{
+				if(i == j)continue;
+				
+				//
+				unit2 = removableConnectedUnits[j];
+				
+				pairId = (1 + Mathf.Max(unit1.hash, unit2.hash)) * 1000 + (1 + Mathf.Min(unit1.hash, unit2.hash));
+				if(checkedPairs.Contains(pairId))continue;
+				checkedPairs.Add(pairId);
+				
+				//
+				pos1 = unit1.pos;
+				pos2 = unit2.pos;
+				
+				dist = Vector3.Distance(pos1, pos2);
+				if(dist > env.unitDistanceMax)
+				{
+					RemoveJoint(pairId);
+					continue;
+				}
+				
+				distCache = Mathf.FloorToInt(dist * 10000);
+				if(cachedJointDistances.ContainsKey(pairId) && cachedJointDistances[pairId] == distCache)continue;
+				cachedJointDistances[pairId] = distCache;
+				
+				distPxl = dist * env.TO_PXL;
+				distSpanPxl = distPxl - env.unitPxlSize;
+				
+				//
+				if(!cachedJoints.ContainsKey(pairId))cachedJoints[pairId] = SpawnJoint(env.canvas, unit1.shape);
+				joint = cachedJoints[pairId];
+				
+				jointType = env.CalcJointType(distSpanPxl);
+				joint.UpdateLinks(unit1.shape, jointType, pos1, pos2, (distPxl - env.unitSpansEx[jointType]) * env.TO_UNT);
+			}
+		}
+	}
+	
+	void RemoveJoint(int pairId, bool forceRemoveJoint=false)
+	{
+		if(cachedJointDistances.ContainsKey(pairId))cachedJointDistances.Remove(pairId);
+		if(cachedJoints.ContainsKey(pairId))
+		{
+			if(forceRemoveJoint)
+			{
+				removableUnitJoints.Add(cachedJoints[pairId]);
+			}
+			else
+			{
+				cachedJoints[pairId].Release();
+			}
+			
+			cachedJoints.Remove(pairId);
+		}
+	}
+	void RemoveConnected(List<VUnit> units, List<UnitBallJoint> joints)
+	{
+		// TODO: 이 흐름을 더 합리적으로
+		List<VUnit> sideEffectedUnits = new List<VUnit>();
+		
+		units.ForEach((u) => {
+			if(u.type != UnitType.Stone && u.type != UnitType.Minion)
+			{
+				sideEffectedUnits.AddRange(FindNeighborUnits(units, u, env.explodeDistanceMax));
+			}
+			
+			KillUnit(u);
+			
+			ReleaseUnit(u);
+		});
+		joints.ForEach((j) => j.Release(false));
+		
+		//
+		sideEffectedUnits = sideEffectedUnits.Distinct().Where((u) => (u != null && !u.willRemove)).ToList();
+		if(sideEffectedUnits.IsNullOrEmpty())
+		{
+			units.ForEach((u) => u.isEnabled = true);
+			
+			waitRemoveConnectUnits = false;
+		}
+		else
+		{
+			TaskUtil.DelayCall(0.15f, () => {
+				sideEffectedUnits.ForEach((u) => {
+					// if(u.type == UnitType.Ball && (u.behavior == UnitBehaviorType.Anchor || u.behavior == UnitBehaviorType.Freeze))
+					if(u.behavior == UnitBehaviorType.Anchor || u.behavior == UnitBehaviorType.Freeze)
+					{
+						ActKillUnit(u);
+					}
+					else if(u.type == UnitType.Bomb)
+					{
+						ActBomb(u);
+					}
+					else if(u.type == UnitType.Stone)
+					{
+						ActKillUnit(u);
+					}
+				});
+			});
+		}
+	}
+					</code></pre>
+				</div>
+				
+				<div class="codeview">
+					<pre class="line-numbers" data-src="https://resume.born81.com/code/_G_SJ.cs" data-download-link data-remove-initial-line-feed><code class="language-csharp">
+//====================
+// BusJam 류의 퍼즐 게임의 일부입니다.
+//====================
+	async UniTaskVoid CheckReady(Action onChecked=null)
+	{
+		waitGameReady = true;
+		
+		//
+		ctsCheckReady = new CancellationTokenSource();
+		var linkedTokenSource = CancellationTokenSource.CreateLinkedTokenSource(ctsCheckReady.Token, gameObject.GetCancellationTokenOnDestroy());
+		
+		// unit이 움직이고
+		if(refUnits.Any((g) => g.isBusy))
+		{
+			await UniTask.WaitUntil(() => !refUnits.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+			
+			UpdateMovable();
+		}
+		
+		//
+		while(true)
+		{
+			// box가 클리어면 나가고 다음것 들어오고
+			if(boxes[0].isComplete)
+			{
+				MoveBox();
+				
+				if(boxes.Any((g) => g.isBusy))
+				{
+					await UniTask.WaitUntil(() => !boxes.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+					
+					UpdateMovable();
+				}
+				
+				boxes.RemoveAt(0);
+				
+				// 새로운 box에 맞는 unit이 슬롯에 있으면 이동시키고
+				if(!boxes.IsNullOrEmpty())
+				{
+					CheckSlotUnitMove();
+					
+					if(refUnits.Any((g) => g.isBusy))
+					{
+						await UniTask.WaitUntil(() => !refUnits.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+						
+						UpdateMovable();
+					}
+				}
+				
+				// 다음 box가 없으면 클리어
+				if(boxes.IsNullOrEmpty())
+				{
+					ResetCancellationTokenSource();
+					
+					WillGameClear();
+					return;
+				}
+			}
+			
+			if(!boxes[0].isComplete)break;
+		}
+		
+		// slot이 꽉찼으면 게임오버
+		if(env.slot.slotRemain == 0)
+		{
+			ResetCancellationTokenSource();
+			
+			WillGameOver();
+			return;
+		}
+		
+		// unit 상태 변경
+		UpdateSecretState();
+		UpdateChainState();
+		UpdateFreezeState();
+		UpdateBombState();
+		
+		await UniTask.WaitUntil(() => !refUnits.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+		
+		// bomb터진 unit 있으면 게임오버
+		if(refUnits.Any((u) => u.isDead))
+		{
+			ResetCancellationTokenSource();
+			
+			WillGameOver();
+			return;
+		}
+		
+		// lock 상태 변경
+		if(lockGroups.Count > 0)
+		{
+			UpdateLockGroupState();
+			
+			if(refUnits.Any((g) => g.isBusy))
+			{
+				await UniTask.WaitUntil(() => !refUnits.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+			}
+			if(refSpawners.Any((g) => g.isBusy))
+			{
+				await UniTask.WaitUntil(() => !refSpawners.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+			}
+		}
+		
+		// spawner 동작
+		if(refSpawners.Count > 0 && refSpawners.Any((g) => g.canSpawn))
+		{
+			SpawnUnit();
+			
+			// unit 상태 변경: 이건 생성된 유닛의 이동이 secret해제 애니랑 관계없다는 가정
+			UpdateSecretState();
+			
+			if(refUnits.Any((g) => g.isBusy))
+			{
+				await UniTask.WaitUntil(() => !refUnits.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+				
+				UpdateMovable();
+			}
+			if(refSpawners.Any((g) => g.isBusy))
+			{
+				await UniTask.WaitUntil(() => !refSpawners.Any((g) => g.isBusy), cancellationToken: linkedTokenSource.Token);
+			}
+		}
+		
+		//
+		waitGameReady = false;
+		
+		//
+		// NOTE: 최초 레벨 생성할때와 continue에서만 사용
+		if(onChecked != null)onChecked();
+	}
+					</code></pre>
+				</div>
+				
+			</div>
+		</section>
+	</div>
+<script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/download-button/prism-download-button.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/line-highlight/prism-line-highlight.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/treeview/prism-treeview.min.js"></script>
+<script src="https://unpkg.com/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+
+</html>
