@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Portfolio - Joohun, Maeng</title>
+	
+	<meta name="theme-color" content="#3a7bd5" />
+	<meta name="description" content="Full Stack Game Developer - Joohun, Maeng" />
+	
+	<meta property="og:url" content="https://resume.born81.com/en/work.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Portfolio - Joohun, Maeng" />
+	<meta property="og:image" content="https://resume.born81.com/en/card.png" />
+	<meta property="og:description" content="Full Stack Game Developer - Joohun, Maeng" />
+	<meta property="og:locale" content="ko_KR" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Portfolio - Joohun, Maeng" />
+	<meta name="twitter:image" content="https://resume.born81.com/en/card.png" />
+	<meta name="twitter:description" content="Full Stack Game Developer - Joohun, Maeng" />
+	<meta name="twitter:url" content="https://resume.born81.com/en/work.html" />
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+	<link rel="stylesheet" href="../work/index.css" />
+	
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0XFCNDTF9"></script>
+	<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-L0XFCNDTF9');</script>
+</head>
+
+<body>
+	<div class="container">
+		<section>
+			<h1>Hello.<br />I'm Joohun, Maeng<span class="period-mark">.</span></h1>
+			<p>
+				<ul>
+					<li><a href="mailto:jh.maeng@born81.com">jh.maeng@born81.com</a></li>
+					<li><a href="https://resume.born81.com/en">Resume</a></li>
+				</ul>
+			</p>
+		</section>
+		
+		<section>
+			<div class="row">
+				<div class="project">
+					<h5>Unity3D Game Development<span class="period-mark">.</span></h5>
+					<p>I developed and personally launched <mark>over 30 mobile games</mark> using Unity3D, and successfully released numerous games through seamless collaboration with publishers.</p>
+					<ul>
+						<li><a href="https://apps.apple.com/us/developer/unit5/id1095195747?see-all=i-phonei-pad-apps" target="_blank">Apple AppStore</a></li>
+						<li><a href="https://play.google.com/store/apps/dev?id=9077046431383856414&hl=en" target="_blank">Google PlayStore</a></li>
+						<!-- <li><a href="https://www.crazygames.com" target="_blank">CrazyGames</a></li> -->
+					</ul>
+					<img loading="lazy" class="thumb thumb2" src="../work/unit5_m_00.png" />
+					<img loading="lazy" class="thumb thumb2" src="../work/unit5_m_01.png" />
+					<img loading="lazy" class="thumb thumb2" src="../work/unit5_m_02.png" />
+					<img loading="lazy" class="thumb thumb2" src="../work/unit5_m_03.png" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="project">
+					<h5>Blockchain Game Development<span class="period-mark">.</span></h5>
+					<p>I developed <mark>12 blockchain games</mark> in collaboration with <a href="https://www.gemhub.io" target="_blank">GemHUB</a> and <a href="https://www.boraportal.com/play/" target="_blank">Bora</a> using Unity3D and HTML/JavaScript.</p>
+					<img loading="lazy" class="thumb thumb2" src="../work/block_00.png" />
+					<img loading="lazy" class="thumb thumb2" src="../work/block_01.png" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="project">
+					<h5>Developed various tools such as level creation tools and level generators, as well as backend servers<span class="period-mark">.</span></h5>
+					<p>To enhance development efficiency, I created various tools using the most suitable languages based on the specific requirements.</p>
+					<img loading="lazy" class="thumb thumb1" src="../work/tool_00.png" />
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="project">
+					<h5>Diverse Development Experience<span class="period-mark">.</span></h5>
+					<p><mark>Over 20 years</mark> of experience in game development, multiplayer game servers, web server and database design, optimization, technical consulting.</p>
+					<p>Led and completed more than 100 projects, demonstrating a deep understanding and expertise across a wide range of development areas.</p>
+					<img loading="lazy" class="thumb thumb1" src="../work/etc_00.png" />
+					<img loading="lazy" class="thumb thumb1" src="../work/etc_01.png" />
+				</div>
+			</div>
+			
+		</section>
+	</div>
+<script>
+function zoom(elm){
+	elm.blur();
+	
+	let margin = 40;
+	let ww = (window.innerWidth || document.documentElement.clientWidth) - margin, wh = (window.innerHeight || document.documentElement.clientHeight) - margin;
+	let iw = elm.naturalWidth, ih = elm.naturalHeight;
+	let r = Math.min(ww / iw, wh / ih);
+	if(r < 1.0){
+		iw = Math.round(iw * r);
+		ih = Math.round(ih * r);
+	}
+	
+	let zoom = document.getElementById('zoom');
+	if(zoom)zoom.remove();
+	
+	zoom = document.createElement('div');
+	zoom.id = 'zoom';
+	zoom.innerHTML = `<div class="overlay"></div><img width="${iw}px" height="${ih}px" src="${elm.src}" />`;
+	zoom.style.setProperty('left', (margin / 2 - 10 + Math.round((ww - iw) / 2)) + 'px');
+	zoom.style.setProperty('top', (margin / 2 - 10 + Math.round((wh - ih) / 2) + document.body.parentElement.scrollTop) + 'px');
+	document.body.appendChild(zoom);
+	
+	zoom.addEventListener('click', () => zoom.remove());
+}
+window.onload = function(){
+	document.querySelectorAll('img.thumb').forEach((img) => {
+		img.addEventListener('click', () => zoom(img));
+	});
+};
+</script>
+</body>
+
+</html>
